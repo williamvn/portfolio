@@ -1,0 +1,20 @@
+
+
+.background-image{
+    position: absolute;
+}
+
+.profile-image{
+    display: inline-block;
+    position: relative;
+    flex-direction: column;
+    align-self: center;
+}
+
+.topcard-presentation{
+    display: flex;
+}
+
+div{
+    border: 1px solid black;
+}

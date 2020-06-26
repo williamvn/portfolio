@@ -8,18 +8,35 @@
     /* border: 2px solid red; */
 /* } */
   
-.profile-image {
-	position: relative;
-	z-index: 2;
-	margin-top: -400px;
-    border-radius: 50%;
-    border: 3px solid white; 
+
+/* 
+div{
+    border: 1px solid black;
 }
-/*
-.topcard-presentation .title{
-    margin: 50px 0;
-    color: white;
+
+#navbarCollapse{
+    border: 1px solid red;
+
 } */
+
+/* Header */
+.profile-image {
+    position: relative;
+    z-index: 2;
+    margin-top: -400px;
+    border-radius: 50%;
+	border: 3px solid white;
+	width: 150px;
+	height: 150px;
+}
+
+#about{
+	scroll-margin-top: 400px;
+}
+
+#knowledges{
+	scroll-margin-top: 65px;
+}
 
 header {
 	position: relative;
@@ -66,8 +83,32 @@ header .typed-cursor {
 	animation-iteration-count: infinite;
 }
 
+.small-rounded{
+    width:15%;
+    height: 15%;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 0, 64);
+    margin: 0;
+}
 
+.fixed-top{
+    position: fixed !important;
+    top:0 !important;
+}
 
-div{
-    /* border: 1px solid black; */
+#tech{
+	background: url('./img/20.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.btn.btn-blue-fill {
+    color: #00a8ff;
+    border-color: #00a8ff;
+    background: transparent;
+}
+
+.border-squared{
+	/* border: 2px solid #00a8ff; */
+    border-radius: 0%;
 }

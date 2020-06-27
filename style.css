@@ -19,6 +19,44 @@ div{
 
 } */
 
+
+.over {
+    position: relative;
+}
+  
+.overlay-color {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(43, 40, 46);
+    cursor: pointer;
+  }
+  
+.over:hover .overlay-color {
+    opacity: 0.7;
+  }
+  
+.overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+	right: 45%;
+	left: 45%;
+	bottom: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
 /* Header */
 .profile-image {
     position: relative;
@@ -99,6 +137,9 @@ header .typed-cursor {
 #tech{
 	background: url('./img/20.jpg');
 	background-size: cover;
+}
+
+.full-page{
 	height: 100vh;
 }
 
@@ -149,3 +190,26 @@ header .typed-cursor {
 .muted{
 	color: #989da0;
 }
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.footer{
+	background: url("./img/footer.jpg");
+	background-size: cover;
+	/* filter: blur(2px);
+	-webkit-filter: blur(2px); */
+}
+
+
+
+.bg-text {
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through*/
+	color: white;
+	font-weight: bold;
+	width: 100%;
+	padding: 20px;
+	/* filter: ; */
+  }

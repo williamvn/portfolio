@@ -1,23 +1,14 @@
-/* .topcard-presentation {
-	padding-bottom: 60px;
-	background: white;
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07); */
-    /* background:url(); */
-    /* background-image: url("./img/fondo.jpg"); */
-    /* background-size: cover; */
-    /* border: 2px solid red; */
-/* } */
+
   
 
-/* 
-div{
+ 
+/* div{
     border: 1px solid black;
-}
-
-#navbarCollapse{
-    border: 1px solid red;
-
 } */
+
+.print{
+	border: 1px solid red;
+}
 
 
 .over {
@@ -56,59 +47,65 @@ div{
     text-align: center;
   }
 
+.half-page{
+	height: 50vh;
+	background: url("../img/about.jpg");
+	background-size: cover;
+}
 
 /* Header */
 .profile-image {
     position: relative;
     z-index: 2;
-    margin-top: -400px;
+	/* margin-top: -10px; */
+	margin-bottom: 50px;
     border-radius: 50%;
 	border: 3px solid white;
 	width: 150px;
 	height: 150px;
 }
 
-#about{
+/* #about{
 	scroll-margin-top: 400px;
-}
+} */
 
 #knowledges{
 	scroll-margin-top: 65px;
 }
 
-header {
+#intro {
 	position: relative;
     width: 100%;
     height: 1024px;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url('./img/header.jpg');
+	background: url('../img/header.jpg');
     background-size: cover;
     /* border: 1px solid red; */
 }
 
-header .table {
+#intro .table {
 	display: table;
 	height: 100%;
 }
 
-header .container {
+#intro .container {
 	height: 100%;
 }
 
-header .header-text {
+#intro .header-text {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
 	color: white;
 }
 
-header .typed {
+#intro .typed {
 	display: inline-block;
 	margin: 0;
 }
 
-header .typed-cursor {
+#intro .typed-cursor {
 	font-size: 60px;
 	display: inline-block;
 	margin: 0 5px;
@@ -135,7 +132,7 @@ header .typed-cursor {
 }
 
 #tech{
-	background: url('./img/20.jpg');
+	background: url('../img/20.jpg');
 	background-size: cover;
 }
 
@@ -184,7 +181,7 @@ header .typed-cursor {
 }
 
 .team .title {
-	margin: 30px 0;
+	margin: 10px 0;
 }
 
 .muted{
@@ -192,11 +189,11 @@ header .typed-cursor {
 }
 
 .box-shadow {
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .2);
 }
 
 .footer{
-	background: url("./img/footer.jpg");
+	background: url("../img/footer.jpg");
 	background-size: cover;
 	/* filter: blur(2px);
 	-webkit-filter: blur(2px); */

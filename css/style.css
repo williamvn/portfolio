@@ -1,54 +1,50 @@
-
-  
-
- 
 /* div{
     border: 1px solid black;
 } */
 
-.print{
+.print {
 	border: 1px solid red;
 	/* width: 30%; */
 }
 
-
 .over {
-    position: relative;
+	position: relative;
 }
-  
-.overlay-color {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(43, 40, 46);
-    cursor: pointer;
-  }
-  
-.over:hover .overlay-color {
-    opacity: 0.7;
-  }
-  
-.overlay-text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-	right: 45%;
-	left: 45%;
-	bottom: 45%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
-.half-page{
+.overlay-color {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: rgb(43, 40, 46);
+	cursor: pointer;
+}
+
+.over:hover .overlay-color {
+	opacity: 0.7;
+}
+
+.overlay-text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	left: 50%;
+	bottom: 45%;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.half-page {
 	height: 50vh;
 	background: url("../img/about.jpg");
 	background-size: cover;
@@ -56,11 +52,11 @@
 
 /* Header */
 .profile-image {
-    position: relative;
-    z-index: 2;
+	position: relative;
+	z-index: 2;
 	/* margin-top: -10px; */
 	margin-bottom: 50px;
-    border-radius: 50%;
+	border-radius: 50%;
 	border: 3px solid white;
 	width: 150px;
 	height: 150px;
@@ -70,19 +66,19 @@
 	scroll-margin-top: 400px;
 } */
 
-#knowledges{
+#knowledges {
 	scroll-margin-top: 65px;
 }
 
 #intro {
 	position: relative;
-    width: 100%;
-    height: 1024px;
+	width: 100%;
+	height: 1024px;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url('../img/header.jpg');
-    background-size: cover;
-    /* border: 1px solid red; */
+	background: url("../img/header.jpg");
+	background-size: cover;
+	/* border: 1px solid red; */
 }
 
 #intro .table {
@@ -119,41 +115,41 @@
 	animation-iteration-count: infinite;
 }
 
-.small-rounded{
-    width:15%;
-    height: 10%;
-    border-radius: 50%;
-    border: 2px solid rgb(255, 0, 64);
-    margin: 0;
+.small-rounded {
+	width: 15%;
+	height: 10%;
+	border-radius: 50%;
+	border: 2px solid rgb(255, 0, 64);
+	margin: 0;
 }
 
-.fixed-top{
-    position: fixed !important;
-    top:0 !important;
+.fixed-top {
+	position: fixed !important;
+	top: 0 !important;
 }
 
-#tech{
-	background: url('../img/20.jpg');
+#tech {
+	background: url("../img/20.jpg");
 	background-size: cover;
 }
 
-.scrollable-content{
+.scrollable-content {
 	overflow: scroll;
-  }
+}
 
-.full-page{
+.full-page {
 	height: 100vh;
 }
 
 .btn.btn-blue-fill {
-    color: #00a8ff;
-    border-color: #00a8ff;
-    background: transparent;
+	color: #00a8ff;
+	border-color: #00a8ff;
+	background: transparent;
 }
 
-.border-squared{
+.border-squared {
 	/* border: 2px solid #00a8ff; */
-    border-radius: 0%;
+	border-radius: 0%;
 }
 
 .team {
@@ -189,29 +185,81 @@
 	margin: 10px 0;
 }
 
-.muted{
+.muted {
 	color: #989da0;
 }
 
 .box-shadow {
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .2);
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
-.footer{
+.footer {
 	background: url("../img/footer.jpg");
 	background-size: cover;
 	/* filter: blur(2px);
 	-webkit-filter: blur(2px); */
 }
 
-
-
 .bg-text {
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through*/
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through*/
 	color: white;
 	font-weight: bold;
 	width: 100%;
 	padding: 20px;
 	/* filter: ; */
-  }
+}
+
+.white-border {
+	border: 2px solid white;
+}
+
+.exp1 {
+	background: url(../img/Formation/Uni.jpg);
+	background-size: cover;
+}
+
+.exp2 {
+	background: url(../img/Formation/LibertyPowerBuilding.jpg);
+	background-size: cover;
+}
+.exp3 {
+	background: url(../img/Formation/OnlineCourses.png);
+	background-size: cover;
+}
+
+.card-body {
+	background-color: rgb(40, 44, 44);
+	opacity: 0.8;
+}
+
+.text-white {
+	opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+	.responsive-title {
+		font-size: 4.5rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.mobile-experience {
+		display: none;
+	}
+	.project{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 799px) {
+	.desktop-experience {
+		display: none;
+	}
+	.project{
+		width: 50%;
+	}
+}
+

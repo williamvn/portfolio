@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Thesis Resume</title>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-dark bg-dark fixed-top mb-2">
+    <a class="navbar-brand m-0 text-white" onclick="GoBack()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+      Thesis Project</a>
+  </nav>
+  <div class="container" style="margin-top: 50px;">
+    <h1>Summary</h1>
+    <p>
+      Currently, the photon mapping algorithm is one of the main and most complete global ilumination techniques. This
+      is
+      because it allows you to simulate optical effects such as reflection, refraction, caustics, shadows, and diffuse
+      interreflection accurately and efficiently. However, one of the atomic operations of this algorithm, determining
+      the first object intersected by a ray, is computationally expensive and can consume up to 95% of rendering time.
+      In order to improve the performance of this algorithm, versions such as photon splatting which
+      estimate the ilumination in a less complex way, have emerged. However, the performance still depends on the number
+      of
+      intersection tests performed. This thesis presents a technique to calculate reflections in dynamic 3D scenes. This
+      technique uses a quad tree in screen space to speed up the search of ray intersection in screen space. The
+      structure is built from the Z-Buffer calculated with a deferred shading, for this reason, it is
+      called the hierarchical Z-Buffer (Hi-Z). Hi-Z serves as an acceleration structure for
+      adaptive ray marching in screen space, which traverses the scene at different levels of resolution. This technique
+      allows the approximate and efficient calculation of the intersection of rays that are not coherent with the
+      geometries of the scene. Therefore, it can be used as an intersection function in the photon splatting algorithm,
+      thus providing an on-screen version of this algorithm with interactive performances.
+    </p>
+    <div class="text-center">
+      <h3> Result Achieved </h3>
+      <video width="50%" controls autoplay>
+        <source src="./img/rendering 3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

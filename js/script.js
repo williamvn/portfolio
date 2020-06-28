@@ -2,21 +2,12 @@ $(".typed").typewriter({
     speed: 60
 });
 
-var lastScrollTop = 0;
-$(document).on("scroll", function(){
-    console.log("scrolling...")
-    var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    if (st > lastScrollTop){
-        console.log("Scrolling Down");
-    }
-    else{
-        console.log("Scrolling Up");
-    }
-    lastScrollTop = st <= 0 ? 0 : st;
+$('#courses').click(function(e) {
+    e.preventDefault();
+    window.open('https://angular.io/start');
+    window.open('https://www.pluralsight.com/courses/aspnetcore-mvc-efcore-bootstrap-angular-web');
+    window.open('https://courses.edx.org/courses/course-v1:Microsoft+DEV315x+1T2019a/course/');
 });
-var activeSection = $('.section.active');
-var activeSlide = activeSection.find('.slide.active');
-console.log(activeSlide);
 
 window.addEventListener('popstate', function(e){
     sectionName = e.srcElement.$currentElement[0].baseURI.split("#")[1];
@@ -30,3 +21,7 @@ window.addEventListener('popstate', function(e){
         navbar.css("background", "none");
     }
 });
+
+function GoBack(){
+    window.history.back();
+}
